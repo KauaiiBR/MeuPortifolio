@@ -905,6 +905,28 @@
             text-align: center;
         }
 
+        .portfolio-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, var(--primary-color), #6D28D9);
+            color: white;
+            padding: 18px 30px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            transition: var(--transition);
+            box-shadow: 0 0 25px rgba(255, 107, 0, 0.3);
+            width: 100%;
+            justify-content: center;
+        }
+
+        .portfolio-cta-btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 0 40px rgba(255, 107, 0, 0.5);
+        }
+
         .contact-message {
             color: var(--text-dark);
             font-size: 1.2rem;
@@ -1523,6 +1545,32 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Projeto 6 - Descubra+ -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <div style="background: linear-gradient(135deg, #00b894 0%, #1a1a1a 100%); height: 100%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-rocket" style="font-size: 4rem; color: white;"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://descubramais.netlify.app" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title"><i class="fas fa-rocket"></i> Trajetória Descubra+</h3>
+                        <p class="project-description">Sistema integrado para Hackathon Pirapora. Plataforma de inclusão profissional de jovens com login corporativo, perfis de simulação, dashboards e gestão de trilhas formativas.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Tailwind</span>
+                            <span class="tech-tag">Autenticação</span>
+                            <span class="tech-tag">Dashboard</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="particles" id="projects-particles"></div>
@@ -1572,7 +1620,11 @@
                     </div>
                     
                     <div class="contact-actions">
-                        <p style="color: var(--text-dark); margin-bottom: 20px;">Ou me encontre nas redes sociais:</p>
+                        <a href="https://kauapaixaoport.netlify.app" target="_blank" class="portfolio-cta-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Ver Portfólio Completo com Todos os Projetos
+                        </a>
+                        <p style="color: var(--text-dark); margin-bottom: 20px; margin-top: 25px;">Ou me encontre nas redes sociais:</p>
                         <div class="social-links">
                             <a href="https://github.com/KauaiiBR" class="social-link" target="_blank">
                                 <i class="fab fa-github"></i>
